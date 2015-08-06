@@ -1,15 +1,15 @@
 {
-  "name": "ruby-string-interpolation",
+  "name": "ruby-string-interpolation 1",
   "main": "./lib/ruby-string-interpolation",
-  "version": "0.1.8",
-  "description": "Keypress handling for # to wrap the selection in interpolation",
+  "version": "0.1.0",
+  "description": "Keypress handling for # to wrap the selection in interpolation. Fork of original andyjeffries package",
   "activationEvents": [
     "ruby-string-interpolation:insert"
   ],
-  "repository": "https://github.com/andyjeffries/ruby-string-interpolation",
+  "repository": "https://github.com/atalargo/ruby-string-interpolation",
   "license": "MIT",
   "engines": {
-    "atom": ">=0.120.0"
+    "atom": ">=1.0.1"
   },
   "dependencies": {}
 }
