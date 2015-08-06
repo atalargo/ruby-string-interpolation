@@ -1,5 +1,5 @@
 {
-  "name": "ruby-string-interpolation 1",
+  "name": "ruby-string-interpolation Atom 1",
   "main": "./lib/ruby-string-interpolation",
   "version": "0.1.0",
   "description": "Keypress handling for # to wrap the selection in interpolation. Fork of original andyjeffries package",
