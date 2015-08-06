@@ -8,5 +8,5 @@ How it works (aside from cursor movements, the only key I press is #):
 
 ## Changelog
 
-**0.1.0** Fork from andyjeffries with fix of deprecated call. original README http://github.com/andyjeffries/ruby-string-interpolation/README.md
+**0.2.0** Fork from andyjeffries with fix of deprecated call. original README http://github.com/andyjeffries/ruby-string-interpolation/README.md
 
