@@ -1,16 +1,16 @@
-# Shamelessly based on the sample package - ascii-art
-# https://atom.io/docs/v0.60.0/your-first-package
+{CompositeDisposable} = require 'atom'
 
 module.exports =
   activate: (state) ->
-    atom.workspaceView.command "ruby-string-interpolation:insert", => @insert()
+      @subscriptions = new CompositeDisposable
+      @subscriptions.add atom.commands.add 'atom-workspace', 'ruby-string-interpolation:insert', => @insert()
 
   insert: ->
-    editor = atom.workspace.activePaneItem
-    if editor.getCursorScopes().indexOf("string.quoted.double.interpolated.ruby") != -1
-      selection = editor.getSelection()
-      selection.insertText("\#{#{selection.getText()}}")
-      if selection.getText().length == 0
-        editor.moveCursorLeft()
+    editor = atom.workspace.getActiveTextEditor()
+    if editor.getLastCursor().getScopeDescriptor().getScopesArray().indexOf("string.quoted.double.interpolated.ruby") != -1
+      for selection in editor.getSelections()
+          selection.insertText("\#{#{selection.getText()}}")
+          if selection.getText().length == 0
+              editor.getLastCursor().moveLeft()
     else
       editor.insertText('#')
