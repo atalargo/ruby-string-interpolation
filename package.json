@@ -1,10 +1,12 @@
 {
   "name": "ruby-string-interpolation-atom-1",
   "main": "./lib/ruby-string-interpolation",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Keypress handling for # to wrap the selection in interpolation. Fork of original andyjeffries package",
   "activationCommands": {
-    "atom-text-editor": ["ruby-string-interpolation:insert"]
+    "atom-text-editor": [
+      "ruby-string-interpolation:insert"
+    ]
   },
   "repository": "https://github.com/atalargo/ruby-string-interpolation",
   "license": "MIT",
