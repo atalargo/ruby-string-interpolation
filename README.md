@@ -8,8 +8,5 @@ How it works (aside from cursor movements, the only key I press is #):
 
 ## Changelog
 
-**0.1.5** Merged PR #2, this stops it triggering if you're in the Find focus
+**0.1.0** Fork from andyjeffries with fix of deprecated call. original README http://github.com/andyjeffries/ruby-string-interpolation/README.md
 
-**0.1.4** Had manually updated to v0.1.3 and then found out I needed to apm publish, which does it for you
-
-**0.1.3** Fixed bug where it had stopped working entirely
